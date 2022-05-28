@@ -1,0 +1,18 @@
+﻿@*<h3>PizzaList</h3>*@
+
+
+<ItemList Items="@Items">
+    <Header>
+        <h1>@Title</h1>
+    </Header>
+    <RowTemplate Context="pizza">
+        <PizzaItem Pizza="@pizza"
+        ButtonClass="@ButtonClass"
+        ButtonTitle="@ButtonTitle"
+        Selected="@Selected" />
+    </RowTemplate>
+</ItemList>
+
+@code {
+
+}
